@@ -1,4 +1,4 @@
-Configuratio files
-==================
+Configuration files
+===================
 
-Here are my version of common configuration files (vimrc, screenrc, etc.).
+My version of common configuration files (vimrc, screenrc, etc.).
