@@ -1,7 +1,5 @@
 alias psg='ps aux | grep -i'
 alias ack-grep='ack-grep --color-filename=magenta --color-lineno=yellow --color-match=yellow'
 alias gahead='git rev-list --pretty=oneline origin/$(current_branch)..$(current_branch)'
-alias rm='rm'
-alias j='jump'
 alias pp='python -m json.tool'
 alias http='python -m SimpleHTTPServer'
