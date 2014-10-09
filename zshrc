@@ -53,9 +53,10 @@ source $ZSH/oh-my-zsh.sh
 JAVA_HOME=/usr/lib/jvm/java-7-oracle
 ANT_HOME=/home/truc/soft/apache-ant-1.9.4
 M2_HOME=/home/truc/soft/apache-maven-3.0.5
+NODEJS_HOME=/home/truc/soft/node-v0.10.32-linux-x64
 
 export EDITOR=vim
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
