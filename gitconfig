@@ -2,7 +2,7 @@
 	name = Truc Nguyen
 	email = truc.nguyen@bonitasoft.com
 [merge]
-	tool = p4merge
+	tool = diffmerge
 [mergetool]
 	keepBackup = false
 [mergetool "diffmerge"]
@@ -12,7 +12,7 @@
 	cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
 	trustExitCode = true
 [diff]
-	tool = p4merge
+	tool = diffmerge
 [difftool]
 	prompt = false
 [difftool "diffmerge"]
@@ -24,3 +24,7 @@
 [core]
 	pager = less -F -X
 	excludesfile = /home/truc/.gitignore_global
+[alias]
+	d = difftool
+[fetch]
+	prune = true
