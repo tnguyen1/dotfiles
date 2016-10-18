@@ -6,7 +6,7 @@
 [mergetool]
 	keepBackup = false
 [mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	cmd = diffmerge --merge --result=$MERGED \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [mergetool "p4merge"]
 	cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
@@ -16,7 +16,7 @@
 [difftool]
 	prompt = false
 [difftool "diffmerge"]
-	cmd = diffmerge $LOCAL $REMOTE
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [difftool "p4merge"]
 	cmd = p4merge $LOCAL $REMOTE
 [push]
@@ -24,7 +24,11 @@
 [core]
 	pager = less -F -X
 	excludesfile = /home/truc/.gitignore_global
+	filemode = true
 [alias]
 	d = difftool
 [fetch]
 	prune = true
+[mergetool "versions"]
+	cmd = $HOME/work/git/bonitasoft/bonita-internal-tools/scripts/resolve-maven-version-conflicts.pl <\"$MERGED\" >\"$MERGED.tmp\" && mv \"$MERGED.tmp\" \"$MERGED\"
+	trustExitCode = true
