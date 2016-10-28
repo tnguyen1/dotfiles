@@ -50,18 +50,13 @@ plugins=(git mvn autojump bower grunt node npm)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-JAVA_HOME=/usr/lib/jvm/java-7-oracle
-#JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-ANT_HOME=/home/truc/soft/apache-ant-1.9.4
-M2_HOME=/home/truc/soft/apache-maven-3.0.5
-#M2_HOME=/home/truc/soft/apache-maven-3.3.3
-#NODEJS_HOME=/home/truc/soft/node-v0.10.32-linux-x64
-NODEJS_HOME=/home/truc/soft/node-v4.4.5-linux-x64
-INTELLIJ_HOME=/home/truc/soft/idea-IC-135.1289
-PACKER_HOME=/home/truc/soft/packer_0.8.5_linux_amd64
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+ANT_HOME=/home/truc/soft/apache-ant-1.9.7
+M2_HOME=/home/truc/soft/apache-maven-3.3.9
+NODEJS_HOME=/home/truc/soft/node-v4.6.1-linux-x64
 
 export EDITOR=vim
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:$INTELLIJ_HOME/bin:$PACKER_HOME:/home/truc/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:/home/truc/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -89,4 +84,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
