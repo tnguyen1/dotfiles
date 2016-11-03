@@ -1,5 +1,5 @@
 alias psg='ps aux | grep -i'
-alias ack-grep='ack-grep --color-filename=magenta --color-lineno=yellow --color-match=yellow'
+alias ag='ack-grep --color-filename=magenta --color-lineno=yellow --color-match=yellow'
 alias pp='python -m json.tool'
 alias http='python -m SimpleHTTPServer'
 
