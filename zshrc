@@ -51,12 +51,12 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 JAVA_HOME=/usr/lib/jvm/java-8-oracle
-ANT_HOME=/home/truc/soft/apache-ant-1.9.7
-M2_HOME=/home/truc/soft/apache-maven-3.3.9
-NODEJS_HOME=/home/truc/soft/node-v4.6.1-linux-x64
+ANT_HOME=$HOME/soft/apache-ant-1.9.7
+M2_HOME=$HOME/soft/apache-maven-3.3.9
+NODEJS_HOME=$HOME/soft/node-v4.6.1-linux-x64
 
 export EDITOR=vim
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:/home/truc/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:$HOME/bin:$HOME/.local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -85,3 +85,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Python virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/work/python_projects
+source $HOME/.local/bin/virtualenvwrapper.sh
+
