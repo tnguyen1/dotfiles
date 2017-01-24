@@ -32,6 +32,7 @@ call vundle#end()            " required
 "filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 filetype plugin on
+packadd! matchit
 "
 " Brief help
 " :PluginList       - lists configured plugins
