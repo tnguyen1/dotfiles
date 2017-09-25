@@ -45,7 +45,7 @@ ZSH_THEME="bira-truc"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mvn autojump bower grunt node npm)
+plugins=(git github mvn autojump bower grunt node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -54,9 +54,10 @@ JAVA_HOME=/usr/lib/jvm/java-8-oracle
 ANT_HOME=$HOME/soft/apache-ant-1.9.7
 M2_HOME=$HOME/soft/apache-maven-3.3.9
 NODEJS_HOME=$HOME/soft/node-v4.6.1-linux-x64
+GRADLE_HOME=$HOME/soft/gradle-3.4.1
 
 export EDITOR=vim
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:$HOME/bin:$HOME/.local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:$GRADLE_HOME/bin:$HOME/bin:$HOME/.local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
