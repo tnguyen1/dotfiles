@@ -55,8 +55,13 @@ packadd! matchit
 :set expandtab
 :set cursorline
 
+:set list
+:set listchars=tab:>-
+
 :set laststatus=2
 :set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+
+:set backupcopy=yes
 
 " Returns true if paste mode is enabled
 function! HasPaste()
@@ -65,3 +70,4 @@ function! HasPaste()
     en
     return ''
 endfunction
+

@@ -45,19 +45,33 @@ ZSH_THEME="bira-truc"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github mvn autojump bower grunt node npm)
+plugins=(git github mvn autojump bower grunt node npm kubectl kube-ps1)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-JAVA_HOME=/usr/lib/jvm/java-8-oracle
-ANT_HOME=$HOME/soft/apache-ant-1.9.7
-M2_HOME=$HOME/soft/apache-maven-3.3.9
-NODEJS_HOME=$HOME/soft/node-v4.6.1-linux-x64
-GRADLE_HOME=$HOME/soft/gradle-3.4.1
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+#JAVA_HOME=/usr/lib/jvm/java-8-oracle
+SOFT=$HOME/soft
+ANT_HOME=$SOFT/apache-ant-1.9.7
+M2_HOME=$SOFT/apache-maven-3.5.4
+#NODEJS_HOME=$SOFT/node-v4.6.1-linux-x64
+#NODEJS_HOME=$SOFT/node-v8.9.3-linux-x64
+#NODEJS_HOME=$HOME/tmp/NodeJS890/node-v8.9.0-linux-x64
+#NODEJS_HOME=$SOFT/node-v4.2.4-linux-x64
+NODEJS_HOME=$SOFT/node-v8.15.1-linux-x64
+PHANTOMJS_HOME=$SOFT/phantomjs-2.1.1-linux-x86_64
+GRADLE_HOME=$SOFT/gradle-3.4.1
+GATLING_HOME=$SOFT/gatling-charts-highcharts-bundle-3.1.2
+GO_HOME=$SOFT/go
+export GOPATH=$HOME/work/go
+CONDA_HOME=$SOFT/miniconda2
+MITMPROXY_HOME=$SOFT/mitmproxy-4.0.4-linux
+KUBE_PS1_ENABLED=false
+KUBE_PS1_SUFFIX=") "
 
 export EDITOR=vim
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:$GRADLE_HOME/bin:$HOME/bin:$HOME/.local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANT_HOME/bin:$M2_HOME/bin:$NODEJS_HOME/bin:$GRADLE_HOME/bin:$GATLING_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$CONDA_HOME/bin:$PHANTOMJS_HOME/bin:$HOME/bin:$HOME/.local/bin:/snap/bin:$MITMPROXY_HOME"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

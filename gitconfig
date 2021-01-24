@@ -13,10 +13,14 @@
 	trustExitCode = true
 [diff]
 	tool = diffmerge
+[diff "sopsdiffer"]
+    textconv = sops -d
 [difftool]
 	prompt = false
 [difftool "diffmerge"]
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[difftool "sopsdifftool"]
+    cmd = t1=`mktemp` && `sops -d $LOCAL > $t1` && t2=`mktemp` && `sops -d $REMOTE > $t2` && diffmerge $t1 $t2 && rm -f $t1 $t2
 [difftool "p4merge"]
 	cmd = p4merge $LOCAL $REMOTE
 [push]
