@@ -102,7 +102,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Python virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/work/python_projects
-source $HOME/.local/bin/virtualenvwrapper.sh
-
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/work/python_projects
+#source $HOME/.local/bin/virtualenvwrapper.sh
